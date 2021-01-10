@@ -1,5 +1,6 @@
 import './styles.css';
 import { ReactComponent as Logo} from './Logo.svg';
+import { Link } from 'react-router-dom';
 
 
 function Navbar() {
@@ -7,7 +8,7 @@ function Navbar() {
         <nav className= "main-navbar">
 
          <Logo />
-    <a href="home" className="logo-text">Ds Delivery</a>
+    <Link to="/" href="home" className="logo-text">Ds Delivery</Link>
         </nav>
     )
 }
